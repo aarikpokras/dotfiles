@@ -1,0 +1,10 @@
+[font.normal]
+family = "Adwaita Mono"
+style = "Regular"
+
+[font]
+size = 10
+
+[window]
+opacity = 0.3
+padding = { x=10, y=10 }
