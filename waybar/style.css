@@ -1,0 +1,136 @@
+* {
+  font-family: monospace;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+#bar {
+  background: transparent;
+}
+
+#custom-brgicon {
+  font-family: "Material Icons";
+  padding: 5px 0px 5px 5px;
+  background-color: black;
+  margin-top: 10px;
+}
+
+#custom-shade {
+  font-family: "Material Icons";
+  padding: 5px 10px 5px 10px;
+  background-color: black;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+#backlight {
+  padding: 7px 5px 5px 0px;
+  margin-top: 10px;
+  background-color: black;
+}
+
+#custom-playing {
+  padding: 5px 10px 5px 10px;
+  background-color: black;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#custom-lock {
+  font-family: "Material Icons";
+  padding: 5px 10px 5px 10px;
+  background-color: black;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#custom-playstat {
+  font-family: "Material Icons";
+  padding: 5px 0 5px 10px;
+  background-color: black;
+  margin-top: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#custom-reload {
+  font-family: "Material Icons";
+  padding: 5px 10px 5px 10px;
+  background-color: black;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+
+#custom-logout {
+  font-family: "Material Icons";
+  padding: 5px 10px 5px 10px;
+  background-color: black;
+  margin-top: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#custom-batticon {
+  font-family: "Material Icons";
+  padding: 5px 0 5px 5px;
+  background-color: black;
+  margin-top: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#custom-volicon {
+  font-family: "Material Icons";
+  padding: 5px 0 5px 5px;
+  margin-top: 10px;
+  background-color: black;
+}
+
+#custom-ntwkicon {
+  font-family: "Material Icons";
+  padding: 5px 0 5px 5px;
+  background-color: black;
+  margin-top: 10px;
+}
+
+#battery {
+  padding: 7px 5px 5px 0;
+  background-color: black;
+/*  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;*/
+  margin-top: 10px;
+}
+
+#custom-ntwk {
+  padding: 5px;
+  background-color: black;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 10px;
+}
+
+#pulseaudio {
+  padding: 7px 5px 5px 0;
+  background-color: black;
+/*  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;*/
+  margin-top: 10px;
+}
+
+#custom-time {
+  font-family: serif;
+  font-weight: 900;
+  color: #3e587c;
+  font-size: 20px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 1);
+  margin-top: 10px;
+}

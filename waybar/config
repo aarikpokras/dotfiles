@@ -1,0 +1,99 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["custom/lock", "custom/logout", "custom/reload"],
+  "modules-center": ["custom/batticon", "battery", "custom/time", "custom/volicon", "pulseaudio", "custom/brgicon", "backlight", "custom/ntwkicon", "custom/ntwk"],
+  "modules-right": ["custom/shade", "custom/playstat", "custom/playing"],
+  "custom/lock": {
+    "exec": "echo lock",
+    "interval": 100,
+    "format": "{}",
+    "tooltip": false,
+    "on-click": "/usr/bin/hyprlock"
+  },
+  "custom/shade": {
+    "exec": "~/.config/waybar/shade.sh",
+    "interval": 10,
+    "format": "{}",
+    "tooltip": false
+  },
+  "brightness": {
+    "format": "{percent}%"
+  },
+  "custom/brgicon": {
+    "exec": "echo wb_sunny",
+    "interval": 100,
+    "format": "{}",
+    "tooltip": false,
+  },
+  "custom/brg": {
+    "exec": "~/.config/waybar/div $(brightnessctl g) $(brightnessctl m)",
+    "interval": 10,
+    "format": "{}%",
+    "tooltip": false
+  },
+  "custom/playstat": {
+    "exec": "~/.config/waybar/playstat.sh",
+    "interval": 5,
+    "format": "{}",
+    "tooltip": false,
+  },
+  "custom/playing": {
+    "exec": "~/.config/waybar/playing.sh",
+    "interval": 10,
+    "format": "{}",
+    "markup": "none"
+  },
+  "custom/reload": {
+    "exec": "echo refresh",
+    "interval": 100,
+    "format": "{}",
+    "tooltip": false,
+    "on-click": "/usr/bin/hyprctl reload"
+  },
+  "custom/logout": {
+    "exec": "echo logout",
+    "interval": 100,
+    "format": "{}",
+    "tooltip": false,
+    "on-click": "/usr/bin/loginctl terminate-session $XDG_SESSION_ID"
+  },
+  "custom/batticon": {
+    "exec": "echo battery_full",
+    "interval": 100,
+    "format": "{}",
+    "tooltip": false
+  },
+  "custom/time": {
+    "exec": "~/.config/waybar/time.sh",
+    "interval": 1,
+    "format": "{}",
+    "tooltip": false
+  },
+  "custom/ntwkicon": {
+    "exec": "echo wifi",
+    "interval": 100,
+    "format": "{}",
+    "tooltip": false
+  },
+  "custom/volicon": {
+    "exec": "echo volume_up",
+    "interval": 100,
+    "format": "{}",
+    "tooltip": false,
+    "on-click": "pavucontrol"
+  },
+  "custom/ntwk": {
+    "exec": "~/.config/waybar/ntwk.sh",
+    "interval": 20,
+    "format": "{}",
+    "tooltip": false
+  },
+  "battery": {
+    "format": "{capacity}%",
+    "format-charging": "C-{capacity}%"
+  },
+  "pulseaudio": {
+    "format": "{volume}%"
+  }
+}
