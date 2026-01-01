@@ -1,4 +1,3 @@
-// also obsolete with `brightnessctl -e`
 #include <cmath>
 #include <iostream>
 using namespace std;
