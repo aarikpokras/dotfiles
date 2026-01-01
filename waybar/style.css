@@ -110,7 +110,7 @@ window#waybar {
 }
 
 #custom-ntwk {
-  padding: 5px;
+  padding: 7px 5px 5px 0;
   background-color: black;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
